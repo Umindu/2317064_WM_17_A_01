@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,64 +10,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- link styles sheet -->
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="javascript.js"></script>
 </head>
+
 <body>
     <!-- Nav Bar -->
     <nav>
-        <a href="index.html" class="logo_text">Linked<span><img class="logo_img" src="/assets/logo.png" alt="Logo image"></span></a>
+        <a href="index.html" class="logo_text">Linked<span><img class="logo_img" src="/assets/logo.png"
+                    alt="Logo image"></span></a>
     </nav>
 
     <!-- Contant -->
     <div class="center">
         <h1>Sign in</h1>
         <p>Stay updated on your professional world</p>
-        <div class="input_calss">
+
+        <div class="input-data">
+            <input type="text" id="username" required>
             <label>Email or Phone</label>
-            <input type="text" id="username" >
         </div>
 
-        <div class="input_calss">
+        <div class="input-data">
+            <input type="password" id="password" required>
             <label>Password</label>
-            <input type="password" id="password">
-            <span>
-                <label>show</label>
-                <label>hide</label>
+
+            <span class="hide_show" id="hide_show" onclick="myFunction()">
+                <button style="display: block;" class="show" id="show">show</button>
+                <button style="display: none;" class="hide" id="hide">hide</button>
             </span>
         </div>
-        
-        <label>Forgot password?</label>
+
+        <div class="Forgotpassword">
+            <a href="#">Forgot password?</a>
+        </div>
         <div>
-            <button type="button">Sign in</button>
+            <button class="Signin_button" type="button">Sign in</button>
+        </div>
+
+        <div class="divider">
+            <hr class="hr-text" data-content="or">
         </div>
 
         <div>
-            <hr>
-            <span>or</span>
-            <hr>
+            <button class="Signin_option_button google_button" type="button">Continue with Google </button>
+            <button class="Signin_option_button apple_button" type="button"> Sign in with Apple</button>
         </div>
-
-        <div>
-            <button type="button">Continue with Google</button>
-            <button type="button">Sign in with Apple</button>
-        </div>
-        
-
     </div>
 
     <div class="join-button">
-        New to LinkedIn? <a href="#" style="color: #0A66C2; font-weight: 600;">Join now</a>
+        New to LinkedIn? <a href="#">Join now</a>
     </div>
 
     <!-- Footer  -->
     <footer>
-        <label>Linked <span><img src="assets/footer.png" alt="logo"> &copy; 2023</span></label>
+        <label>Linked<span style="font-weight: normal;"><img src="assets/footer.png" alt="logo"> &copy;
+                2023</span></label>
         <a href="#">User Agreement</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Community Guidelines</a>
         <a href="#">Cookie Policy</a>
         <a href="#">Copyright Policy</a>
         <a href="#">Send Feedback</a>
-        <a href="#">Language <span> <i class="fa fa-angle-down"></i></span></a>
+        <a class="language" href="#">Language <span> <i class="fa fa-angle-down"></i></span></a>
     </footer>
 </body>
+
 </html>
