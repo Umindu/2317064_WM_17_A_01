@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Block Click for &lt;p&gt; Tag</title>
+    <style>
+        .aa, .bb {
+            background: transparent;
+            border: 2px solid transparent;
+            transition: background 0.3s, border 0.3s;
+        }
+
+        .aa:hover, .bb:hover {
+            background: lightgray;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p class="aa">Clicking here will not trigger the alert.</p>
+    <button class="bb">Clicking here will trigger the alert.</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('click', function(event) {
+                const clickedElement = event.target;
+                const className = clickedElement.className;
+
+                if (className) {
+                    alert("Clicked on class: " + className);
+                } else {
+                    alert("Clicked on an element with no class.");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

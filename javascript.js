@@ -1,4 +1,4 @@
-function myFunction() {
+function ShowHide() {
     var show = document.getElementById("show");
     var hide = document.getElementById("hide");
 
@@ -15,3 +15,25 @@ function myFunction() {
     }
 }
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.body.addEventListener('click', function (event) {
+        const clickedElement = event.target;
+        const className = clickedElement.className;
+
+        if (className === "show" || className === "hide") {
+            ShowHide()
+        } 
+        else{
+            var show = document.getElementById("show");
+            var hide = document.getElementById("hide");
+
+            show.style.background = "transparent";
+            hide.style.background = "transparent";
+
+            show.style.border = "2px solid transparent";
+            hide.style.border = "2px solid transparent";
+        }
+        
+    });
+});
