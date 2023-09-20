@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+nav{
+    padding: 25px 10px 0px 50px;
+    margin: auto;
+}
+.logo_text{
+    font-size: 20pt;
+    font-weight: 700;
+    color: #0A66C2;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    letter-spacing: -1px;
+}
+
+.logo_img{
+    height: 30px;
+    position: absolute;
+    top: 29px;
+    padding: 2px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.center{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 520px;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 0px 1px 5px 0px #8888887a;
+    padding: 20px;
+  }
+
+  .center h1{
+    font-weight: 600;
+  }
+
+  .center p {
+    font-size: 10pt;
+  }
+
+.input_calss{
+    border:  1px solid #000000;
+    border-radius:5px;
+    height: 55px;
+    padding: 5px;
+    margin-top: 20px;
+  }
+
+input{
+    border: none;
+}
+
+input:focus{
+    border: none;
+}
+
+  .join-button{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 70px;
+    text-align: center;
+
+  }
+
+  footer {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height: 40px;
+    text-align: center;
+    font-size: 9pt;
+    font-weight: 600;
+    
+  }
+
+  footer a{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    color: #888888;
+  }
