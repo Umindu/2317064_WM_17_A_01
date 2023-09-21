@@ -15,55 +15,57 @@
 
 <body>
     <!-- Nav Bar -->
-    <nav>
-        <a href="index.html" class="logo_text">Linked<span><img class="logo_img" src="/assets/logo.png"
-                    alt="Logo image"></span></a>
-    </nav>
+    <div class="navBar">
+        <nav>
+            <a href="index.html"><img class="logo_img" src="/assets/logo.png" alt="Logo image"></span></a>
+        </nav>
+    </div>
+
 
     <!-- Contant -->
-    <div style="display: flex; justify-content: space-between;">
+    <div class="main">
         <div class="center">
             <h1>Sign in</h1>
             <p>Stay updated on your professional world</p>
-    
+
             <div class="input-data">
                 <input type="text" id="username" required>
                 <label>Email or Phone</label>
             </div>
-    
+
             <div class="input-data">
                 <input type="password" id="password" required>
                 <label>Password</label>
-    
+
                 <span class="hide_show" id="hide_show">
                     <button style="display: block;" class="show" id="show">show</button>
                     <button style="display: none;" class="hide" id="hide">hide</button>
                 </span>
             </div>
-    
+
             <div class="Forgotpassword">
                 <a href="#">Forgot password?</a>
             </div>
             <div>
                 <button class="Signin_button" type="button">Sign in</button>
             </div>
-    
+
             <div class="divider">
                 <hr class="hr-text" data-content="or">
             </div>
-    
+
             <div>
                 <button class="Signin_option_button google_button" type="button">Continue with Google </button>
                 <button class="Signin_option_button apple_button" type="button"> Sign in with Apple</button>
             </div>
         </div>
-    
+
         <div class="join-button">
             New to LinkedIn? <a href="#">Join now</a>
         </div>
 
     </div>
-    
+
 
     <!-- Footer  -->
     <footer>
