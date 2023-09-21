@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open Sans');
+@import url('https://fonts.cdnfonts.com/css/sequel');
 
 * {
   margin: 0;
@@ -10,7 +11,6 @@
 body {
   padding: 25px 50px;
   height: 100vh;
-  overflow: hidden;
 }
 
 nav {
@@ -74,7 +74,7 @@ a {
   border-radius: 4px;
   padding-left: 10px;
   padding-top: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.805);
 }
 
 .input-data input:focus {
@@ -117,8 +117,8 @@ a {
 .hide_show button:hover {
   background-color: #0a66c23d !important;
   border: 1px solid transparent;
+  cursor: pointer;
 }
-
 
 .hide_show label {
   color: #0A66C2;
@@ -170,6 +170,7 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.6);
   font-size: 11pt;
   background-color: white;
+  cursor: pointer;
 }
 
 .Signin_option_button:hover {
@@ -209,7 +210,6 @@ a {
   text-align: center;
 }
 
-
 .hr-text {
   position: relative;
   outline: 0;
@@ -243,9 +243,9 @@ a {
 
 .join-button {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 75px;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -286,6 +286,11 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.language span i{
+  font-size: 13pt;
+  font-weight: 600;
+}
+
 .language:hover,
 .language span i:hover {
   color: #0A66C2;
@@ -304,9 +309,12 @@ footer label img {
 }
 
 
-
-
 @media screen and (max-width: 768px) {
+
+  body {
+    padding: 25px 25px;
+  }
+
   .center {
     top: 51%;
     left: 50%;
@@ -321,11 +329,44 @@ footer label img {
   }
 
   .join-button {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-    text-align: center;
+    top: 93%;
   }
 
 }
+
+@media screen and (max-width: 425px) {
+
+  body {
+    padding: 25px 10vw;
+  }
+
+  .center {
+    width: 90vw;
+  }
+
+}
+
+/* display height */
+@media screen and (min-height: 1024px) {
+
+  .join-button {
+    top: 75vh;
+  }
+}
+
+@media screen and (max-height: 700px) {
+
+  .join-button {
+    top: 600px;
+  }
+
+  .center {
+    top: 320px;
+  }
+
+  footer{
+    top: 660px;
+  }
+
+}
+
