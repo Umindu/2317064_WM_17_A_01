@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url('https://fonts.cdnfonts.com/css/sequel');
-/* @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic); */
 
 * {
   margin: 0;
@@ -14,10 +12,7 @@ body {
   height: 100vh;
 }
 
-nav {
-  padding: 0;
-  margin: auto;
-}
+
 
 .navBar {
   padding: 32px 0px 0px 56px;
@@ -130,6 +125,7 @@ a {
 
 .Forgotpassword {
   margin-top: 12px;
+  margin-left: -6px;
 }
 
 .Forgotpassword a {
